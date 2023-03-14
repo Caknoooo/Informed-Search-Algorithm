@@ -9,6 +9,7 @@
 - [Implementation Details](#implementation-details)
 - [Comparative Analysis](#comparative-analysis)
 - [Conclusion](#conclusion)
+- [References](#references)
 
 
 ## Group Introduction
@@ -55,3 +56,8 @@ Dimana :
 ## Comparative Analysis
 
 ## Conclusion
+
+## References
+- [https://www.javatpoint.com/ai-informed-search-algorithms](https://www.javatpoint.com/ai-informed-search-algorithms)
+- [https://www.geeksforgeeks.org/difference-between-informed-and-uninformed-search-in-ai](https://www.geeksforgeeks.org/difference-between-informed-and-uninformed-search-in-ai)
+- [https://socs.binus.ac.id/2013/04/23/uninformed-search-dan-informed-search](https://socs.binus.ac.id/2013/04/23/uninformed-search-dan-informed-search)

@@ -31,6 +31,13 @@ Tujuan : Untuk mengetahui bagaimana performa kedua metode informed search terseb
 - Heuristic Functions : Fungsi pembantu yang digunakan dalam Informed Search untuk membantu mencari jalur pencarian yang paling menjanjikan dengan cara melakukan perkiraan jarak dari state terkini dengan goal state. Walaupun terdapat beberapa metode heuristik yang dapat digunakan dalam fungsi ini, tetapi semuanya akan membantu dalam membuat proses pencarian lebih efisien.
 
 ## Greedy Best First Search
+Greedy Best First Search adalah salah satu algoritma Informed Search yang bekerja dengan memilih satu jalur pencarian yang terlihat menjanjikan atau terbaik saat itu. Merupakan hasil penggabungan dari algoritma Depth-First Search dan Breadth-First Search sehingga lebih efisien dari keduanya karena dapat bergerak dengan memilih mana yang lebih baik dari kedua algoritma tersebut sesuai dengan kondisi terkini.<br>
+Cara kerja algoritma Greedy BFS ini sendiri adalah dengan memanfaatkan Heuristic Functions untuk menentukan jarak dari state terkini ke goal state dan memilih node yang terlihat paling baik (jaraknya paling dekat) pada setiap langkah pencarian hingga goal state tercapai. Algoritma ini dapat diimplementasikan menggunakan struktur data Priority Queue. Perumusan yang digunakan untuk menentukan cost terbaik dari node yang akan dilalui sendiri sebagai berikut,
+
+```f(n) = h(n)```<br>
+Dimana :
+- f(n) adalah cost/jarak total dari current state ke goal state
+- h(n) adalah hasil dari heuristic function
 
 ## A* Search
 

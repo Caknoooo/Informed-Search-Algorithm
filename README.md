@@ -6,6 +6,7 @@
 - [Terminology](#terminology)
 - [Greedy Best First Search](#greedy-best-first-search)
 - [A* Search](#a*-search)
+- [Implementation Details](#implementation-details)
 - [Comparative Analysis](#comparative-analysis)
 - [Conclusion](#conclusion)
 
@@ -37,10 +38,19 @@ Cara kerja algoritma Greedy BFS ini sendiri adalah dengan memanfaatkan Heuristic
 
     f(n) = h(n)
 Dimana :
-- f(n) adalah cost/jarak total dari current state ke goal state
-- h(n) adalah hasil dari heuristic function
+- f(n) adalah hasil dari fungsi yang berupa cost/jarak total dari current state ke goal state
+- h(n) adalah heuristic function yang dipergunakan
 
 ## A* Search
+
+## Implementation Details
+1. Diawali dengan pembuatan class PriorityQueue yang merupakan implementasi dari struktur data Priority Queue untuk membantu simulasi implementasi algoritma Greedy BFS
+2. Dibuat juga class CityNode yang merupakan class untuk melambangkan setiap node/kota yang ada pada peta Romania
+3. Dibuat fungsi makeDict() yang digunakan untuk mengambil data kota-kota beserta dengan jarak antar tiap kota dari dalam file Jalan.txt yang akan dipergunakan untuk membangun graph untuk mewakili peta Romania pada kasus
+4. Dibuat juga fungsi makeHeuristicDict() yang digunakan untuk mengambil data informasi tambahan yang terdapat pada file HeuristicJalan.txt yang nantinya akan dipergunakan sebagai fungsi heuristic untuk proses pencarian
+5. Kemudian dibuat fungsi pencarian Greedy BFS dan A* yang akan melakukan pencarian dengan perbedaan dimana pada A* Search nilai yang diperoleh dari heuristic function ditambahkan dengan nilai distance atau cost dari start state ke current state, sementara pada Greedy BFS hanya digunakan nilai dari heuristic function saja
+6. Setelah itu, dibuat fungsi PrintOutput yang akan mengeluarkan hasil dari proses pencarian dengan format sesuai yang telah dispesifikasikan. Yakni terdiri dari kota yang sempat terjelajahi saat proses searching dan juga jarak terpendek yang didapatkan sebagai hasil pencarian yang ditambah dengan jumlah kota serta jarak pencariannya (depth).
+7. Terakhir, barulah dibuat fungsi main dimana semuanya dimulai, dengan masukkan start state adalah kota Aran dan goal statenya kota Bucharest.
 
 ## Comparative Analysis
 

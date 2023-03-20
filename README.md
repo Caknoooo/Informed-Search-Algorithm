@@ -56,7 +56,11 @@ Dimana :
 ## Comparative Analysis
 
 ## Conclusion
+Algoritma A* cenderung menghasilkan cost yang lebih kecil dibandingkan dengan Greedy Search, karena A* menggabungkan informasi biaya dan heuristik dalam pemilihan node berikutnya, sehingga memungkinkan A* untuk mengeksplorasi jalur yang lebih efisien. Namun, ada kemungkinan bahwa Greedy Search bisa menghasilkan solusi yang lebih baik dalam beberapa kasus, terutama ketika goal state cukup dekat dengan state awal dan heuristik yang digunakan sudah cukup akurat.
 
+Sementara itu, jumlah node yang diekspansi oleh A* dan Greedy Search tidak tetap karena dipengaruhi oleh struktur graf dan heuristik yang digunakan. Dalam beberapa kasus, A* dapat menghasilkan jumlah node yang lebih sedikit dibandingkan dengan Greedy Search, tetapi dalam kasus lain, jumlah node yang diekspansi oleh A* bisa jadi lebih besar daripada Greedy Search.
+
+Oleh karena itu, untuk memilih algoritma pencarian yang tepat, kita perlu mempertimbangkan karakteristik dari masalah yang akan diselesaikan dan melakukan evaluasi kinerja dengan melakukan beberapa test case yang mencakup berbagai kemungkinan kondisi masalah.
 ## References
 - [https://www.javatpoint.com/ai-informed-search-algorithms](https://www.javatpoint.com/ai-informed-search-algorithms)
 - [https://www.geeksforgeeks.org/difference-between-informed-and-uninformed-search-in-ai](https://www.geeksforgeeks.org/difference-between-informed-and-uninformed-search-in-ai)

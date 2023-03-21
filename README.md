@@ -2,15 +2,15 @@
 
 ## Daftar Isi
 
-- [Group Introduction](#group-introduction)
-- [Description](#description)
-- [Terminology](#terminology)
-- [Greedy Best First Search](#greedy-best-first-search)
-- [A\* Search](#a*-search)
-- [Implementation Details](#implementation-details)
-- [Comparative Analysis](#comparative-analysis)
-- [Conclusion](#conclusion)
-- [References](#references)
+-   [Group Introduction](#group-introduction)
+-   [Description](#description)
+-   [Terminology](#terminology)
+-   [Greedy Best First Search](#greedy-best-first-search)
+-   [A\* Search](#a*-search)
+-   [Implementation Details](#implementation-details)
+-   [Comparative Analysis](#comparative-analysis)
+-   [Conclusion](#conclusion)
+-   [References](#references)
 
 ## Group Introduction
 
@@ -26,15 +26,16 @@
 
 Pada repository ini, kami mengimplementasikan 2 Algoritma Informed Search yaitu <b>Greedy Best First Search Algorithm</b> dan <b>A\* Algorithm</b> menggunakan bahasa Python ke dalam file dengan format <i>.ipynb</i> untuk menjalankan satu contoh kasus yang telah diberikan.<br>
 Contoh kasus yang digunakan sendiri adalah contoh kasus pada powerpoint yakni Romania Problem yang merupakan permasalahan klasik untuk Informed Search. Pada permasalahan tersebut terdapat peta Romania yang terdiri dari beberapa kota dengan diberikan informasi jarak antar kota-kota yang ada. Tujuan pada kasus yang digunakan adalah untuk melakukan pencarian jalur terpendek untuk pergi dari satu kota ke yang lain, dalam hal ini adalah dari Aran ke Bucharest.<br>
+Selain dari contoh kasus yang ada, kami juga menyertakan kasus custom yang kami buat sendiri dengan judul Java Problem dimana terdapat peta pulau Jawa yang terdiri dari beberapa kota di sana dengan diberikan informasi jarak antar kota-kota yang ada. Tujuan pada kasus ini sama dengan contoh kasus sebelumnya, akan tetapi jalur terpendek yang dicari adalah dari Surabaya ke Tulungagung.<br>
 Tujuan : Untuk mengetahui bagaimana performa kedua metode informed search tersebut dan perbandingannya antara yang satu dengan yang lain.
 
 ## Terminology
 
-- Informed Search : Sebuah algoritma pencarian/search dimana terdapat informasi tambahan untuk mencapai goal state yang tentunya akan sangat membantu dalam proses pencarian secara efisien. Disebut juga dengan Heuristic Search.
-- Start State : Keadaan/kondisi awal sebelum pencarian mulai dijalankan.
-- Current State : Keadaan/kondisi terkini pada pencarian.
-- Goal State : Keadaan/kondisi tujuan yang ingin dicari.
-- Heuristic Functions : Fungsi pembantu yang digunakan dalam Informed Search untuk membantu mencari jalur pencarian yang paling menjanjikan dengan cara melakukan perkiraan jarak dari state terkini dengan goal state. Walaupun terdapat beberapa metode heuristik yang dapat digunakan dalam fungsi ini, tetapi semuanya akan membantu dalam membuat proses pencarian lebih efisien.
+-   Informed Search : Sebuah algoritma pencarian/search dimana terdapat informasi tambahan untuk mencapai goal state yang tentunya akan sangat membantu dalam proses pencarian secara efisien. Disebut juga dengan Heuristic Search.
+-   Start State : Keadaan/kondisi awal sebelum pencarian mulai dijalankan.
+-   Current State : Keadaan/kondisi terkini pada pencarian.
+-   Goal State : Keadaan/kondisi tujuan yang ingin dicari.
+-   Heuristic Functions : Fungsi pembantu yang digunakan dalam Informed Search untuk membantu mencari jalur pencarian yang paling menjanjikan dengan cara melakukan perkiraan jarak dari state terkini dengan goal state. Walaupun terdapat beberapa metode heuristik yang dapat digunakan dalam fungsi ini, tetapi semuanya akan membantu dalam membuat proses pencarian lebih efisien.
 
 ## Greedy Best First Search
 
@@ -45,8 +46,8 @@ Cara kerja algoritma Greedy BFS ini sendiri adalah dengan memanfaatkan Heuristic
 
 Dimana :
 
-- f(n) adalah hasil dari fungsi yang berupa cost/jarak total dari current state ke goal state
-- h(n) adalah heuristic function yang dipergunakan
+-   f(n) adalah hasil dari fungsi yang berupa cost/jarak total dari current state ke goal state
+-   h(n) adalah heuristic function yang dipergunakan
 
 ## A\* Search
 
@@ -66,9 +67,9 @@ f(n) = g(n) + h(n)
 
 di mana :
 
-- f(n) merupakan hasil penjumlahan cost aktual yang telah ditempuh dan estimasi cost yang tersisa untuk mencapai tujuan melalui node tersebut.
-- g(n) adalah nilai cost aktual dari state awal hingga state akhir
-- h(n) adalah nilai estimasi cost yang tersisa untuk mencapai tujuan dari state yang sedang dipertimbangkan atau yang biasa disebut dengan heuristic function.
+-   f(n) merupakan hasil penjumlahan cost aktual yang telah ditempuh dan estimasi cost yang tersisa untuk mencapai tujuan melalui node tersebut.
+-   g(n) adalah nilai cost aktual dari state awal hingga state akhir
+-   h(n) adalah nilai estimasi cost yang tersisa untuk mencapai tujuan dari state yang sedang dipertimbangkan atau yang biasa disebut dengan heuristic function.
 
 ## Implementation Details
 
@@ -92,6 +93,6 @@ Oleh karena itu, untuk memilih algoritma pencarian yang tepat, kita perlu memper
 
 ## References
 
-- [https://www.javatpoint.com/ai-informed-search-algorithms](https://www.javatpoint.com/ai-informed-search-algorithms)
-- [https://www.geeksforgeeks.org/difference-between-informed-and-uninformed-search-in-ai](https://www.geeksforgeeks.org/difference-between-informed-and-uninformed-search-in-ai)
-- [https://socs.binus.ac.id/2013/04/23/uninformed-search-dan-informed-search](https://socs.binus.ac.id/2013/04/23/uninformed-search-dan-informed-search)
+-   [https://www.javatpoint.com/ai-informed-search-algorithms](https://www.javatpoint.com/ai-informed-search-algorithms)
+-   [https://www.geeksforgeeks.org/difference-between-informed-and-uninformed-search-in-ai](https://www.geeksforgeeks.org/difference-between-informed-and-uninformed-search-in-ai)
+-   [https://socs.binus.ac.id/2013/04/23/uninformed-search-dan-informed-search](https://socs.binus.ac.id/2013/04/23/uninformed-search-dan-informed-search)

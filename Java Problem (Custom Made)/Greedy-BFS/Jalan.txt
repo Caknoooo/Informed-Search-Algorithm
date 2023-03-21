@@ -10,7 +10,7 @@ Gresik,Tuban, 78
 Tuban,Rembang, 313
 Rembang,Demak, 66
 Kertosono,Demak, 88
-Kertosno,Madiun, 79
+Kertosono,Madiun, 79
 Madiun,Sragen, 31
 Madiun,Tulungagung, 51
 Madiun,Nganjuk, 233
